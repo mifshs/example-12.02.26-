@@ -8,7 +8,11 @@
 </head>
 <body>
 <x-main-layout>
+    <x-slot:title>
+        primer
+    </x-slot:title>
     <p>content of this page</p>
+    <x-status>подтверждено</x-status>
 </x-main-layout>
 </body>
 </html>
