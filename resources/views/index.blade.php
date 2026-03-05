@@ -1,19 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    @vite(['resources/css/app.css','resources/js/app.js'])
-</head>
-<body>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        Пример страницы
+
+
 <x-main-layout>
-    <x-slot:title>
-        primer
-    </x-slot:title>
-    <p>content of this page</p>
-    <x-status>подтверждено</x-status>
 </x-main-layout>
-</body>
-</html>
+
+    <p>Это контент страницы</p>
+
+
+
+
+    @for ($i = 0; $i < 10; $i++)
+        @php
+            $type = rand(1,3)
+        @endphp
+        <x-status :type=$type>
+            @if($type==1)
+                новый
+            @elseif($type==2)
+                подтверждено
+            @else
+                отклонено
+            @endif    
+        </x-status>
+    @endfor
+
+
+
 

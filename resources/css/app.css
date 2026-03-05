@@ -8,4 +8,27 @@
 @tailwind utilities;
 
 
+p{
+    margin: 2%;
+}
 
+.red{
+    color: red;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: darkred;
+}
+
+.green{
+    color:rgb(116, 255, 116);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+.blue{
+    color: rgb(16, 16, 88);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: blue;
+}
